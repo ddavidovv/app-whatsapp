@@ -1,6 +1,7 @@
 import { Template, Shipment, MessageLog, ProviderType, Placeholder } from '@/types';
-import { config, getProviderConfig } from '@/config';
+import { getProviderConfig, config } from '@/config';
 
+// @ts-expect-error - Mock templates kept for reference
 const MOCK_TEMPLATES: Template[] = [
   // LINKMOBILITY Templates
   {

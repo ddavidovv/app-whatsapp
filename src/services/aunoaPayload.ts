@@ -1,4 +1,4 @@
-import { Template, ProviderConfig } from '@/types';
+import { Template } from '@/types';
 
 interface AunoaProfile {
   [key: string]: string;
@@ -23,7 +23,7 @@ interface AunoaPayload {
  */
 export const buildAunoaPayload = (
   phone: string,
-  template: Template,
+  _template: Template,
   placeholderValues: string[],
   templateVariableNames?: string[]
 ): AunoaPayload => {
@@ -62,7 +62,7 @@ export const buildAunoaPayload = (
  */
 export const buildAunoaMultiPayload = (
   phones: string[],
-  template: Template,
+  _template: Template,
   placeholderValues: string[],
   templateVariableNames?: string[]
 ): AunoaPayload => {
