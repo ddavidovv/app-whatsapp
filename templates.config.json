@@ -1,0 +1,78 @@
+{
+  "templates": [
+    {
+      "name": "ctt_utility",
+      "provider": "linkmobility",
+      "language": "es",
+      "category": "UTILITY",
+      "namespace": "b3fecbcc_92c8_4f4b_838d_f94d26afa9e6",
+      "components": [
+        {
+          "type": "BODY",
+          "text": "Hola {{1}}, tu envío con código de seguimiento {{2}} está en camino. {{3}}."
+        }
+      ],
+      "placeholderMapping": ["receiver_name", "shipping_code", "eta"]
+    },
+    {
+      "name": "ctt_utility2",
+      "provider": "linkmobility",
+      "language": "es",
+      "category": "UTILITY",
+      "namespace": "b3fecbcc_92c8_4f4b_838d_f94d26afa9e6",
+      "components": [
+        {
+          "type": "BODY",
+          "text": "Hola {{1}}, hemos intentado entregar tu paquete {{2}} pero {{3}}. Puedes recogerlo en: {{4}}, Punto alternativo 1: {{5}}, Punto alternativo 2: {{6}}."
+        }
+      ],
+      "placeholderMapping": ["receiver_name", "shipping_code", "custom", "address", "custom", "custom"]
+    },
+    {
+      "name": "tp_ctt_ausente_demo",
+      "provider": "aunoa",
+      "language": "es",
+      "category": "UTILITY",
+      "components": [
+        {
+          "type": "BODY",
+          "text": "Hemos intentado entregar tu paquete pero no ha sido posible. Puedes recogerlo en nuestro punto de recogida."
+        }
+      ],
+      "placeholderMapping": [],
+      "variableNames": []
+    },
+    {
+      "name": "tp_ctt_ausente",
+      "provider": "aunoa",
+      "language": "es",
+      "category": "UTILITY",
+      "components": [
+        {
+          "type": "BODY",
+          "text": "Hemos intentado entregar tu paquete {{1}} por {{2}}. Puedes recogerlo en:\n\n📍 {{3}}\n{{4}}\nHorario: {{5}}\n\n📍 {{6}}\n{{7}}\nHorario: {{8}}\n\n📍 {{9}}\n{{10}}\nHorario: {{11}}"
+        }
+      ],
+      "placeholderMapping": ["shipping_code", "custom", "custom", "custom", "custom", "custom", "custom", "custom", "custom", "custom", "custom"],
+      "variableNames": ["num_seguimiento", "motivo", "punto1_nombre", "punto1_direccion", "punto1_horario", "punto2_nombre", "punto2_direccion", "punto2_horario", "punto3_nombre", "punto3_direccion", "punto3_horario"]
+    },
+    {
+      "name": "tmp_ctt_test_sf",
+      "provider": "salesforce",
+      "language": "en_US",
+      "category": "UTILITY",
+      "components": [
+        {
+          "type": "HEADER",
+          "text": "Finalize account set-up"
+        },
+        {
+          "type": "BODY",
+          "text": "Hi {{1}},\n\nYour new account has been created successfully.\n\nPlease verify {{2}} to complete your profile."
+        }
+      ],
+      "placeholderMapping": ["receiver_name", "custom"],
+      "variableNames": ["name", "verification_item"]
+    }
+  ]
+}

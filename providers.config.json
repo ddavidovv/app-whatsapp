@@ -1,0 +1,59 @@
+{
+  "providers": [
+    {
+      "id": "linkmobility",
+      "name": "LINKMOBILITY",
+      "envFile": ".env.linkmobility",
+      "description": "LINKMOBILITY WhatsApp Business API",
+      "authType": "basic",
+      "templates": [
+        "ctt_utility",
+        "ctt_utility2"
+      ],
+      "webhookConfig": {
+        "eventReportGates": ["VUqJ94rJ"]
+      }
+    },
+    {
+      "id": "meta",
+      "name": "META Directo",
+      "envFile": ".env.meta",
+      "description": "Meta WhatsApp Business Platform (Direct)",
+      "authType": "bearer",
+      "templates": [],
+      "webhookConfig": {}
+    },
+    {
+      "id": "salesforce",
+      "name": "SalesForce",
+      "envFile": ".env.salesforce",
+      "description": "SalesForce WhatsApp Integration",
+      "authType": "oauth",
+      "templates": [
+        "tmp_ctt_test_sf"
+      ],
+      "webhookConfig": {}
+    },
+    {
+      "id": "broker_ctt",
+      "name": "Broker CTT",
+      "envFile": ".env.broker_ctt",
+      "description": "CTT Broker WhatsApp Service",
+      "authType": "apikey",
+      "templates": [],
+      "webhookConfig": {}
+    },
+    {
+      "id": "aunoa",
+      "name": "Aunoa",
+      "envFile": ".env.aunoa",
+      "description": "Aunoa WhatsApp Business API (Meta BSP)",
+      "authType": "bearer",
+      "templates": [
+        "tp_ctt_ausente_demo",
+        "tp_ctt_ausente"
+      ],
+      "webhookConfig": {}
+    }
+  ]
+}
