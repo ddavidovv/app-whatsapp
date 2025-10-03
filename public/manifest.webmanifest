@@ -1,0 +1,10 @@
+{
+  "name": "WhatsApp Template Tester",
+  "short_name": "Template Tester",
+  "description": "Utility Messaging Template Tester for WhatsApp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#dc2626",
+  "icons": []
+}
